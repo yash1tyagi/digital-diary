@@ -32,7 +32,7 @@ const { body, validationResult } = require('express-validator');
         user = await User.create({
             name: req.body.name,
             password: secPass,
-            email: req.body.email,
+            email: req.body.email, 
         });
         // creating auth Tocken 
         const data = {
